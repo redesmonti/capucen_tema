@@ -1,0 +1,120 @@
+/*
+Theme Name: Monti Sedadent
+Theme URI: https://wordpress.org/themes/monti/
+Author: Michelle Navia
+Author URI: https://wordpress.org/
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: monti
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+h1,h2,h3,h4,h5,h6{
+font-family: 'Open Sans', sans-serif;
+font-weight: 800!important;
+}
+p, span, ul, li, a, {
+font-family: 'Open Sans', sans-serif;
+}
+body {
+    background: #f7f7f7;
+}
+
+/*--------------------------------------------------------------
+# Navegacion (navbar)
+--------------------------------------------------------------*/
+
+nav.navegacion {
+  top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: #fff;
+}
+nav.navegacion ul{
+  margin-top: 12px;
+}
+nav.navegacion ul li{
+  /*para los dispositivos moviles*/
+  text-align: center;
+  margin-right: 10px;
+
+}
+nav.navegacion ul li a {
+    color: #5ab6a4;
+    font-weight: bold;
+    padding: 13px;
+    padding-bottom: 3px;
+    border-bottom: 10px solid #fff;
+    transition: 0.3s ease;
+}
+nav.navegacion ul li a:hover, nav.navegacion ul li a:active, nav.navegacion ul li a:focus {
+    background: transparent;
+    border-bottom: 10px solid #5ab6a4;
+    transition: 0.3s ease;
+}
+
+#navbarjs {
+    position: fixed;
+    box-shadow: 1px 1px 7px #00000045;
+}
+/*togglenavigation*/
+.navbar .navbar-header,
+.navbar-collapse {
+    float:none;
+    vertical-align: top;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 26px;
+  height: 4px;
+  background-color: #5ab6a4;
+  border-radius: 1px;
+}
+
+/*codigo para ajustar logo en navbar*/
+.navbar-brand {
+  /*padding 8px ajusta bien para todos los dispositivos*/
+    padding: 0px;
+}
+.navbar-brand> a img {
+    width: 240px;
+}
+/* para dispositivos moviles*/
+@media (min-width: 780px){
+  
+  nav.navegacion ul li{
+    margin-left: auto;
+      margin-right:auto;
+
+  }
+  nav.navegacion{
+    padding: 1px 0;
+    width: 100%;
+    position:absolute;
+    display: block;
+  }
+}
+.contenedo-contacto {
+    background: #f7ad51;
+    text-align: right;
+    padding-right: 5%;
+}
+.contenedo-contacto a {
+    color: #fff;
+    text-decoration: none;
+    text-align: right;
+}
+.navbar-brand h3 {
+    margin-top: 0px;
+}
