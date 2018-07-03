@@ -1,37 +1,33 @@
+<?php 
+/*
+Template Name: Organigrama
+*/
+?>
 <?php get_header(); ?>
 <div class="container-fluid">
-<div class="row">
+	<div class="row">
 		<div class="col-md-12">
 			<div class="row">
 				<div class="caja-titulo">
-					<h1 class="wow fadeIn">Noticias</h1>
+					<h1 class="wow fadeIn">CAPUCEN</h1>
 					<p class="wow fadeIn">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
 					<div class="gradiente-azul-titulo-index"></div>
 				</div>
 				<div class="sub-menu">
 				<ul>
-					<a href="http://localhost/miguelclaro/noticias/"><li>Noticias</li></a>
-					<a href="http://localhost/miguelclaro/temas-de-interes/"><li>Temas de Interés</li></a>
-					<a href="http://localhost/miguelclaro/agenda/"><li>Agenda</li></a>
+					<a href="http://localhost/miguelclaro/quienes-somos/"><li>Quienes somos</li></a>
+					<a href="http://localhost/miguelclaro/historia/"><li>Historia</li></a>
+					<a href="http://localhost/miguelclaro/organigrama/"><li>Organigrama</li></a>
 				</ul>
 				</div>
 			</div>
 		</div>	
 	</div>
+	
 	<div class="col-md-8 contenido-pagina">
-		<div class="titulo-noticia-pagina wow fadeInUp">
-			<div class="">
-				<h1>Titulo Noticia</h1>
-				<p class="bajada-noticia">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis culpa</p>	
-			</div>
-			<div>
-				<i class="fa fa-calendar" aria-hidden="true"></i> <span>19 junio 2018</span>
-			</div>		
-		</div>
-		<hr class="linea-separadora wow fadeInUp">
-		<div class="caja-foto-articulo">
-			<img src="http://localhost/miguelclaro/wp-content/uploads/2012/10/151.jpg" alt="" class="noticia-imagen wow fadeInUp">	
-		</div>
+		<h1 class="wow fadeInUp">Organigrama</h1><!-- loop de wordpress este debe ser el título -->
+
+		 <!-- loop de wordpress este debe ser el contenido para editar desde wordpress -->
 		<p class="wow fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -56,12 +52,6 @@
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 		</p>
-		<hr class="linea-separadora wow fadeInUp"> 
-		<div class="iconos-imprimir-compartir wow fadeInUp">
-			<a href=""><i class="fa fa-print" aria-hidden="true"></i></a>
-			<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-			<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-		</div>
 	</div>
 	<div class="col-md-4">
 		<div class="agenda ">
