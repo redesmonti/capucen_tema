@@ -1,6 +1,6 @@
 	<?php 
 /*
-Template Name: Temas de Interés
+Template Name: Tema de interés
 */
 ?>
 <?php get_header(); ?>
@@ -9,12 +9,12 @@ Template Name: Temas de Interés
 		<div class="col-md-12">
 			<div class="row">
 				<div class="caja-titulo">
-					<h1 class="wow fadeIn">Temas de Interés</h1>
+					<h1 class="wow fadeIn">Tema de interés</h1>
 					<p class="wow fadeIn">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
 					<div class="gradiente-azul-titulo-index"></div>
 				</div>
 				<div class="sub-menu">
-					<ul>
+				<ul>
 					<a href="<?php bloginfo('url'); ?>/noticias/"><li>Noticias</li></a>
 					<a href="<?php bloginfo('url'); ?>/temas-de-interes/"><li>Temas de Interés</li></a>
 					<a href="<?php bloginfo('url'); ?>/agenda/"><li>Agenda</li></a>
@@ -25,7 +25,7 @@ Template Name: Temas de Interés
 	</div>
 	
 	<div class="col-md-8 contenido-pagina">
-		<h1 class="wow fadeInUp">Temas de Interés</h1><!-- loop de wordpress este debe ser el título -->
+		<h1 class="wow fadeInUp">Agenda</h1><!-- loop de wordpress este debe ser el título -->
 
 		 <!-- loop de wordpress este debe ser el contenido para editar desde wordpress -->
 		<div class="row">
