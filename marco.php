@@ -15,10 +15,10 @@ Template Name: Convenio Marco
 				</div>
 				<div class="sub-menu">
 					<ul>
-						<a href="http://localhost/miguelclaro/sense/"><li>Sense</li></a>
-						<a href="http://localhost/miguelclaro/convenio-marco/"><li>Convenio Marco</li></a>
-						<a href="http://localhost/miguelclaro/mineria/"><li>Cursos Abiertos</li></a>
-						<a href="http://localhost/miguelclaro/agenda/"><li>Diplomados en Conjunto U Central</li></a>
+						<a href="<?php bloginfo('url'); ?>/sense/"><li>Sense</li></a>
+						<a href="<?php bloginfo('url'); ?>/convenio-marco/"><li>Convenio Marco</li></a>
+						<a href="<?php bloginfo('url'); ?>/mineria/"><li>Cursos Abiertos</li></a>
+						<a href="<?php bloginfo('url'); ?>/agenda/"><li>Diplomados en Conjunto U Central</li></a>
 					</ul>
 				</div>
 			</div>
@@ -32,7 +32,7 @@ Template Name: Convenio Marco
 			</div>	
 		</div>
 		<hr class="linea-separadora wow fadeInUp">
-		<embed src="http://localhost/miguelclaro/wp-content/uploads/2018/07/cursos_licitados.pdf" type="application/pdf" width="100%" height="600"></embed>
+		<embed src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/07/cursos_licitados.pdf" type="application/pdf" width="100%" height="600"></embed>
 		<hr class="linea-separadora wow fadeInUp"> 
 		<div class="iconos-imprimir-compartir wow fadeInUp">
 			<a href=""><i class="fa fa-print" aria-hidden="true"></i></a>

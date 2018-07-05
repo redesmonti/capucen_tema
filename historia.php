@@ -15,9 +15,9 @@ Template Name: Historia
 				</div>
 				<div class="sub-menu">
 				<ul>
-					<a href="http://localhost/miguelclaro/quienes-somos/"><li>Quienes somos</li></a>
-					<a href="http://localhost/miguelclaro/historia/"><li>Historia</li></a>
-					<a href="http://localhost/miguelclaro/organigrama/"><li>Organigrama</li></a>
+					<a href="<?php bloginfo('url'); ?>/quienes-somos/"><li>Quienes somos</li></a>
+					<a href="<?php bloginfo('url'); ?>/historia/"><li>Historia</li></a>
+					<a href="<?php bloginfo('url'); ?>/organigrama/"><li>Organigrama</li></a>
 				</ul>
 				</div>
 			</div>

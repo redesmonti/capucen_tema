@@ -15,9 +15,9 @@ Template Name: Agenda
 				</div>
 				<div class="sub-menu">
 				<ul>
-					<a href="http://localhost/miguelclaro/noticias/"><li>Noticias</li></a>
-					<a href="http://localhost/miguelclaro/temas-de-interes/"><li>Temas de Interés</li></a>
-					<a href="http://localhost/miguelclaro/agenda/"><li>Agenda</li></a>
+					<a href="<?php bloginfo('url'); ?>/noticias/"><li>Noticias</li></a>
+					<a href="<?php bloginfo('url'); ?>/temas-de-interes/"><li>Temas de Interés</li></a>
+					<a href="<?php bloginfo('url'); ?>/agenda/"><li>Agenda</li></a>
 				</ul>
 				</div>
 			</div>

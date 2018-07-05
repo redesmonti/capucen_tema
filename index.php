@@ -10,9 +10,9 @@
 				</div>
 				<div class="sub-menu">
 				<ul>
-					<a href="http://localhost/miguelclaro/noticias/"><li>Noticias</li></a>
-					<a href="http://localhost/miguelclaro/temas-de-interes/"><li>Temas de Interés</li></a>
-					<a href="http://localhost/miguelclaro/agenda/"><li>Agenda</li></a>
+					<a href="<?php bloginfo('url'); ?>/noticias/"><li>Noticias</li></a>
+					<a href="<?php bloginfo('url'); ?>/temas-de-interes/"><li>Temas de Interés</li></a>
+					<a href="<?php bloginfo('url'); ?>/agenda/"><li>Agenda</li></a>
 				</ul>
 				</div>
 			</div>
@@ -30,7 +30,7 @@
 		</div>
 		<hr class="linea-separadora wow fadeInUp">
 		<div class="caja-foto-articulo">
-			<img src="http://localhost/miguelclaro/wp-content/uploads/2012/10/151.jpg" alt="" class="noticia-imagen wow fadeInUp">	
+			<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2012/10/151.jpg" alt="" class="noticia-imagen wow fadeInUp">	
 		</div>
 		<p class="wow fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
