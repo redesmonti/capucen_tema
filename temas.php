@@ -15,10 +15,10 @@ Template Name: Temas de Interés
 				</div>
 				<div class="sub-menu">
 					<ul>
-						<a href="<?php bloginfo('url'); ?>/noticias/"><li>Noticias</li></a>
-						<a href="<?php bloginfo('url'); ?>/temas-de-interes/"><li>Temas de Interés</li></a>
-						<a href="<?php bloginfo('url'); ?>/agenda/"><li>Agenda</li></a>
-					</ul>
+					<a href="<?php bloginfo('url'); ?>/noticias/"><li>Noticias</li></a>
+					<a href="<?php bloginfo('url'); ?>/temas-de-interes/"><li>Temas de Interés</li></a>
+					<a href="<?php bloginfo('url'); ?>/agenda/"><li>Agenda</li></a>
+				</ul>
 				</div>
 			</div>
 		</div>	
