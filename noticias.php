@@ -27,6 +27,20 @@ Template Name: Noticias
 	<div class="col-md-8 contenido-pagina">
 		<h1 class="wow fadeInUp">Noticias</h1><!-- loop de wordpress este debe ser el título -->
 
+		<?php 
+          $currentPage = (get_query_var('paged')) ? get_query_var('paged') : 1 ; //cuenta el numero de post y si no existen vuelve a la primera pagina
+          global $wp_query;
+          $original_query = $wp_query;
+          $args = array( 
+          	'post_type'=> 'post',
+          	'showposts' => '6', //numero de noticias que treara
+            'paged' => $currentPage ,
+            'orderby' => 'date', 
+            'order' => 'DESC',
+          ); 
+          $postslist = get_posts( $args );    
+          foreach ($postslist as $post) :  setup_postdata($post); 
+        ?> 
 		 <!-- loop de wordpress este debe ser el contenido para editar desde wordpress -->
 		<div class="row">
 			<div class="col-md-4 col-xs-12">
@@ -44,130 +58,33 @@ Template Name: Noticias
 								<div class="wsp"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
 							</a>
 						</div>
-						<img src="<?php echo get_template_directory_uri(); ?>/images/dibujo.jpg" alt="">							
+						<div class="imagen ">
+	                      <?php  if ( has_post_thumbnail() ) { the_post_thumbnail('medium', array('class' => 'img-responsive')); }?>
+	                    </div>							
 					</div>
 					<div class="texto">
-						<h3>Titulo Noticia</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ipsa dolorem architecto porro beatae, quo, dignissimos numquam</p>		
-					</div>
-				</div>	
-			</div>
-			<div class="col-md-4 col-xs-12">
-				<div class="tarjeta-grande tarjeta-grande-noticias wow fadeInUp">
-					<div class="foto-noticia">
-					<div class="gradiente-foto"></div>
-						<div class="redes-sociales">
-							<a href="" class="">
-								<div class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-							</a>
-							<a href="">
-								<div class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-							</a>	
-							<a href="">
-								<div class="wsp"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
-							</a>
-						</div>
-						<img src="<?php echo get_template_directory_uri(); ?>/images/dibujo.jpg" alt="">							
-					</div>
-					<div class="texto">
-						<h3>Titulo Noticia</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ipsa dolorem architecto porro beatae, quo, dignissimos numquam</p>		
-					</div>
-				</div>	
-			</div>
-			<div class="col-md-4 col-xs-12">
-				<div class="tarjeta-grande tarjeta-grande-noticias wow fadeInUp">
-					<div class="foto-noticia">
-					<div class="gradiente-foto"></div>
-						<div class="redes-sociales">
-							<a href="" class="">
-								<div class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-							</a>
-							<a href="">
-								<div class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-							</a>	
-							<a href="">
-								<div class="wsp"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
-							</a>
-						</div>
-						<img src="<?php echo get_template_directory_uri(); ?>/images/dibujo.jpg" alt="">							
-					</div>
-					<div class="texto">
-						<h3>Titulo Noticia</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ipsa dolorem architecto porro beatae, quo, dignissimos numquam</p>		
-					</div>
-				</div>	
-			</div>
-			<div class="col-md-4 col-xs-12">
-				<div class="tarjeta-grande tarjeta-grande-noticias wow fadeInUp">
-					<div class="foto-noticia">
-					<div class="gradiente-foto"></div>
-						<div class="redes-sociales">
-							<a href="" class="">
-								<div class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-							</a>
-							<a href="">
-								<div class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-							</a>	
-							<a href="">
-								<div class="wsp"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
-							</a>
-						</div>
-						<img src="<?php echo get_template_directory_uri(); ?>/images/dibujo.jpg" alt="">							
-					</div>
-					<div class="texto">
-						<h3>Titulo Noticia</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ipsa dolorem architecto porro beatae, quo, dignissimos numquam</p>		
-					</div>
-				</div>	
-			</div>
-			<div class="col-md-4 col-xs-12">
-				<div class="tarjeta-grande tarjeta-grande-noticias wow fadeInUp">
-					<div class="foto-noticia">
-					<div class="gradiente-foto"></div>
-						<div class="redes-sociales">
-							<a href="" class="">
-								<div class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-							</a>
-							<a href="">
-								<div class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-							</a>	
-							<a href="">
-								<div class="wsp"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
-							</a>
-						</div>
-						<img src="<?php echo get_template_directory_uri(); ?>/images/dibujo.jpg" alt="">							
-					</div>
-					<div class="texto">
-						<h3>Titulo Noticia</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ipsa dolorem architecto porro beatae, quo, dignissimos numquam</p>		
-					</div>
-				</div>	
-			</div>
-			<div class="col-md-4 col-xs-12">
-				<div class="tarjeta-grande tarjeta-grande-noticias wow fadeInUp">
-					<div class="foto-noticia">
-					<div class="gradiente-foto"></div>
-						<div class="redes-sociales">
-							<a href="" class="">
-								<div class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-							</a>
-							<a href="">
-								<div class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-							</a>	
-							<a href="">
-								<div class="wsp"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
-							</a>
-						</div>
-						<img src="<?php echo get_template_directory_uri(); ?>/images/dibujo.jpg" alt="">							
-					</div>
-					<div class="texto">
-						<h3>Titulo Noticia</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ipsa dolorem architecto porro beatae, quo, dignissimos numquam</p>		
+						<h3><?php the_title(); ?></h3>
+						<p><?php the_content(); ?></p>		
 					</div>
 				</div>	
 			</div>
 		</div>
+		<?php endforeach; ?>
+		<!--fin-->
+		<div class="col-md-8">
+            <?php 
+            the_posts_pagination(
+              array(
+                  'mid_size' => 2,
+                  'screen_reader_text'=> '&nbsp;',//poner texto sobre paginacion
+                  'prev_text' => __( '<i class="fa fa-arrow-left"></i>', 'textdomain' ),
+                  'next_text' => __( '<i class="fa fa-arrow-right"></i>', 'textdomain' ),
+              )
+            ); 
+            wp_reset_postdata();
+            $wp_query = $original_query;
+            ?>
+	    </div>
 	</div>
 	<div class="col-md-4">
 		<div class="agenda ">

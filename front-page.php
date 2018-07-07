@@ -26,6 +26,21 @@ echo do_shortcode('[smartslider3 slider=2]');
 			<div class="caja-noticias col-md-12">
 				<div class="row">
 					<div class="col-md-6 col-xs-12">
+						<?php
+				            $currentPage = (get_query_var('paged')) ? get_query_var('paged') : 1 ; //cuenta el numero de post y si no existen vuelve a la primera pagina
+				                global $wp_query;
+				                $original_query = $wp_query;
+				                $args = array(
+				                    'post_type' => 'post',
+				                    'showposts' => '1', //numero de noticias que treara
+				                    'paged' => $currentPage ,
+				                    'orderby' => 'date', 
+				                    'order' => 'ASC',
+				                    'tag'   => 'destacada'
+				                ); 
+				                $the_query = new WP_Query( $args );    
+				        ?>
+						<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 						<div class="tarjeta-grande wow fadeInUp">
 							<div class="foto-noticia">
 							<div class="gradiente-foto"></div>
@@ -40,15 +55,34 @@ echo do_shortcode('[smartslider3 slider=2]');
 										<div class="wsp"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
 									</a>
 								</div>
-								<img src="<?php echo get_template_directory_uri(); ?>/images/dibujo.jpg" alt="">							
+								<a href="<?php the_permalink(); ?>">
+                                	<?php  if ( has_post_thumbnail() ) { the_post_thumbnail('large', array('class' => 'img-responsive')); }?>
+                            	</a>							
 							</div>
 							<div class="texto">
-								<h3>Titulo Noticia</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ipsa dolorem architecto porro beatae, quo, dignissimos numquam</p>		
+								<h3 href="<?php the_permalink(); ?>">
+									<?php the_title(); ?>	
+								</h3>
+								<p><?php the_excerpt(); ?></p>		
 							</div>
 						</div>	
+						<?php endwhile; endif; ?> 
 					</div>
 					<div class="col-md-6 col-xs-12">
+						<?php
+			            $currentPage = (get_query_var('paged')) ? get_query_var('paged') : 1 ; //cuenta el numero de post y si no existen vuelve a la primera pagina
+			                global $wp_query;
+			                $original_query = $wp_query;
+			                $args = array(
+			                    'post_type' => 'post',
+			                    'showposts' => '2', //numero de noticias que treara
+			                    'paged' => $currentPage ,
+			                    'orderby' => 'date', 
+			                    'order' => 'ASC'
+			                ); 
+			                $the_query = new WP_Query( $args );    
+			        ?>
+						<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 						<div class="tarjetas-chicas">
 							<div class="tarjeta-chica wow fadeInUp">
 								<div class="foto-noticia">
@@ -64,35 +98,19 @@ echo do_shortcode('[smartslider3 slider=2]');
 											<div class="wsp"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
 										</a>
 									</div>
-									<img src="<?php echo get_template_directory_uri(); ?>/images/computador.jpg" alt="">							
+									<a href="<?php the_permalink(); ?>">
+                                		<?php  if ( has_post_thumbnail() ) { the_post_thumbnail('large', array('class' => 'img-responsive')); }?>
+                            		</a>							
 								</div>
 								<div class="texto">
-									<h3>Titulo Noticia</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ipsa dolorem architecto porro beatae, quo, dignissimos numquam</p>		
+									<h3 href="<?php the_permalink(); ?>">
+										<?php the_title(); ?>
+									</h3>
+									<p><?php the_excerpt(); ?></p>		
 								</div>
 							</div>
-							<div class="tarjeta-chica wow fadeInUp">
-								<div class="foto-noticia">
-								<div class="gradiente-foto"></div>
-									<div class="redes-sociales">
-										<a href="" class="">
-											<div class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-										</a>
-										<a href="">
-											<div class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-										</a>	
-										<a href="">
-											<div class="wsp"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
-										</a>
-									</div>
-									<img src="<?php echo get_template_directory_uri(); ?>/images/trabajo.jpg" alt="">							
-								</div>
-								<div class="texto">
-									<h3>Titulo Noticia</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ipsa dolorem architecto porro beatae, quo, dignissimos numquam</p>		
-								</div>
-							</div>
-						</div>	
+						</div>
+						<?php endwhile; endif; ?>	
 					</div>
 				</div>
 			</div>
