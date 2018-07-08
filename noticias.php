@@ -38,9 +38,12 @@ Template Name: Noticias
             'orderby' => 'date', 
             'order' => 'DESC',
           ); 
-          $postslist = get_posts( $args );    
-          foreach ($postslist as $post) :  setup_postdata($post); 
-        ?> 
+           $custom_post_type = new WP_Query( $args );
+              $wp_query = $custom_post_type;
+              if ( $custom_post_type->have_posts() ) : ?>
+                <?php $i = 1; while ( $custom_post_type->have_posts() ) : $custom_post_type->the_post(); ?>
+                <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+                <?php if(!empty($url)){ ?>
 		 <!-- loop de wordpress este debe ser el contenido para editar desde wordpress -->
 		<div class="row">
 			<div class="col-md-4 col-xs-12">
@@ -69,9 +72,10 @@ Template Name: Noticias
 				</div>	
 			</div>
 		</div>
-		<?php endforeach; ?>
+		<?php } ?>
+        <?php $i++;endwhile; endif; ?>
 		<!--fin-->
-		<div class="col-md-8">
+		<div class="col-md-8 GG">
             <?php 
             the_posts_pagination(
               array(
