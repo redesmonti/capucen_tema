@@ -10,6 +10,7 @@ function sedadent_styles(){
   wp_enqueue_script('captcha', "https://www.google.com/recaptcha/api.js", array('jquery'), true);
   wp_enqueue_script('bootstrapjs', "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", array('jquery'), true);
   wp_enqueue_script( 'wow', get_stylesheet_directory_uri() . '/js/wow.min.js', array(), '', true );
+  wp_enqueue_script( 'count', get_stylesheet_directory_uri() . '/js/count.js', array(), '', true );
 
   wp_enqueue_style('animate', get_stylesheet_directory_uri() . '/css/animate.css');
   wp_enqueue_style('footer', get_stylesheet_directory_uri() . '/css/footer.css');
@@ -28,6 +29,20 @@ function wow_init() { ?>
     new WOW().init();
   </script>
 <?php }
+
+
+//Insertar javascripts
+/*add_action("wp_enqueue_scripts", "incrustar_js");
+function incrustar_js(){
+  if ( !is_admin() ) { // para que solo haga la carga si no es el área de admin
+     // registra la ubicación, dependencias y versión de su script.
+     wp_register_script('count',
+         get_template_directory_uri() . '/js/count.js',
+         array('jquery'),
+         '1.0' );
+     wp_enqueue_script('navbarjs');
+  }
+}*/
 
 
 /*Menus*/

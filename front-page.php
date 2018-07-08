@@ -8,9 +8,9 @@ echo do_shortcode('[smartslider3 slider=2]');
 <!--     Contadores     -->
 <div class="container-fluid contadores">
 	<div class="contenedor-contadores">
-		<div class="contador_uno wow fadeInUp"><span>324</span><p>Convenio Marco</p></div>
-		<div class="contador_uno wow fadeInUp"><span>423</span><p>Código Sence</p></div>
-		<div class="contador_uno wow fadeInUp"><span>453</span><p>Alumnos</p></div>
+		<div class="contador_uno wow fadeInUp"><span class="count">324</span><p>Convenio Marco</p></div>
+		<div class="contador_uno wow fadeInUp"><span class="count">423</span><p>Código Sence</p></div>
+		<div class="contador_uno wow fadeInUp"><span class="count">453</span><p>Alumnos</p></div>
 	</div>
 </div>
 
