@@ -78,7 +78,7 @@ echo do_shortcode('[smartslider3 slider=2]');
 			                    'showposts' => '2', //numero de noticias que treara
 			                    'paged' => $currentPage ,
 			                    'orderby' => 'date', 
-			                    'order' => 'ASC'
+			                    'order' => 'DESC'
 			                ); 
 			                $the_query = new WP_Query( $args );    
 			        ?>
