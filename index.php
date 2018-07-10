@@ -18,44 +18,23 @@
 			</div>
 		</div>	
 	</div>
+	<?php if ( have_posts() ) : the_post(); ?>
 	<div class="col-md-8 contenido-pagina">
 		<div class="titulo-noticia-pagina wow fadeInUp">
 			<div class="">
-				<h1>Titulo Noticia</h1>
+				<h1><?php the_title(); ?></h1>
 				<p class="bajada-noticia">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis culpa</p>	
 			</div>
 			<div>
-				<i class="fa fa-calendar" aria-hidden="true"></i> <span>19 junio 2018</span>
+				<i class="fa fa-calendar" aria-hidden="true"></i> <span>19 junio 2018</span><!-- esta fecha que debe ser?, la fecha actual o la fecha de creacion del post??-->
 			</div>		
 		</div>
 		<hr class="linea-separadora wow fadeInUp">
 		<div class="caja-foto-articulo fadeInUp">
-			<?php  if ( has_post_thumbnail() ) { the_post_thumbnail('large', array('class' => '')); }?>
+			<?php  if ( has_post_thumbnail() ) { the_post_thumbnail('medium', array('class' => 'img-responsive')); }?>
 		</div>
-		<p class="wow fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<p class="wow fadeInUp"><?php the_content(); ?></p>
 		<br>
-<br>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-<br>
-<br>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-		</p>
 		<hr class="linea-separadora wow fadeInUp"> 
 		<div class="iconos-imprimir-compartir wow fadeInUp">
 			<a href=""><i class="fa fa-print" aria-hidden="true"></i></a>
@@ -63,6 +42,11 @@
 			<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
 		</div>
 	</div>
+	<div class="col-md-12 navegacion-noticias">
+        <?php previous_post_link('%link', '<i class="fa fa-arrow-left"></i> Atras '); ?><!--hacia atras-->
+        <?php next_post_link('%link', ' Siguiente <i class="fa fa-arrow-right"></i>'); ?><!--hacia adelante-->
+    </div>
+    <?php endif; ?>
 	<div class="col-md-4">
 		<div class="agenda ">
 			<div class="titulo-noticias">
@@ -143,8 +127,5 @@
 		</div>
 	</div>
 </div>
-
-
-
 
 <?php get_footer(); ?>

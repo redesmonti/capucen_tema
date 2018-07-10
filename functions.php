@@ -31,20 +31,6 @@ function wow_init() { ?>
 <?php }
 
 
-//Insertar javascripts
-/*add_action("wp_enqueue_scripts", "incrustar_js");
-function incrustar_js(){
-  if ( !is_admin() ) { // para que solo haga la carga si no es el área de admin
-     // registra la ubicación, dependencias y versión de su script.
-     wp_register_script('count',
-         get_template_directory_uri() . '/js/count.js',
-         array('jquery'),
-         '1.0' );
-     wp_enqueue_script('navbarjs');
-  }
-}*/
-
-
 /*Menus*/
 
 require_once('wp-bootstrap-navwalker.php');
@@ -124,7 +110,7 @@ function my_custom_init() {
         'capability_type' => 'post',
         'hierarchical' => true,
         'menu_position' => null,
-        'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
+        'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields' )
     );
  
     register_post_type( 'Evento', $args ); /* Registramos y a funcionar */

@@ -20,7 +20,7 @@ echo do_shortcode('[smartslider3 slider=2]');
 		<div class="noticias row">
 			<div class="titulo-noticias wow fadeInUp">
 				<h2>Noticias</h2>
-				<a href="">Ver más</a>
+				<a href="<?php bloginfo('url'); ?>/noticias">Ver más</a>
 			</div>
 			<hr class="linea-separadora">
 			<div class="caja-noticias col-md-12">
@@ -60,8 +60,8 @@ echo do_shortcode('[smartslider3 slider=2]');
                             	</a>							
 							</div>
 							<div class="texto">
-								<h3 href="<?php the_permalink(); ?>">
-									<?php the_title(); ?>	
+								<h3>
+									<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>	
 								</h3>
 								<p><?php the_excerpt(); ?></p>		
 							</div>
@@ -81,7 +81,7 @@ echo do_shortcode('[smartslider3 slider=2]');
 			                    'order' => 'DESC'
 			                ); 
 			                $the_query = new WP_Query( $args );    
-			        ?>
+			        		?>
 						<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 						<div class="tarjetas-chicas">
 							<div class="tarjeta-chica wow fadeInUp">
@@ -103,8 +103,8 @@ echo do_shortcode('[smartslider3 slider=2]');
                             		</a>							
 								</div>
 								<div class="texto">
-									<h3 href="<?php the_permalink(); ?>">
-										<?php the_title(); ?>
+									<h3>
+										<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 									</h3>
 									<p><?php the_excerpt(); ?></p>		
 								</div>
@@ -185,62 +185,38 @@ echo do_shortcode('[smartslider3 slider=2]');
 			</div>
 			<hr class="linea-separadora">
 			<div class="caja-agenda wow fadeInUp">
+				<?php
+	            $currentPage = (get_query_var('paged')) ? get_query_var('paged') : 1 ; //cuenta el numero de post y si no existen vuelve a la primera pagina
+	                global $wp_query;
+	                $original_query = $wp_query;
+	                $args = array(
+	                    'post_type' => 'evento',
+	                    'showposts' => '4', //numero de noticias que treara
+	                    'paged' => $currentPage ,
+	                    'orderby' => 'date', 
+	                    'order' => 'DESC'
+	                ); 
+	                $the_query = new WP_Query( $args );    
+	        		?>
+					<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+						
 				<div class="caja-evento">
 					<div class="cuadro-fecha">
-						<span>mayo</span>
-						<p>14</p>
+						<span>MES</span>
+						<p>Dia</p>
 					</div>
 					<div class="info-evento">
-						<h4>Titulo evento</h4>
+						<h4>
+							<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>	
+						</h4>
 						<hr>
 						<div class="lugar">
 							<i class="fa fa-map-marker" aria-hidden="true"></i>
-							<p>Calle nuermo #3223, Santiago Centro	</p>
+							<p>Direccion</p>
 						</div>
 					</div>	
 				</div>
-				<div class="caja-evento">
-					<div class="cuadro-fecha">
-						<span>mayo</span>
-						<p>14</p>
-					</div>
-					<div class="info-evento">
-						<h4>Titulo evento</h4>
-						<hr>
-						<div class="lugar">
-							<i class="fa fa-map-marker" aria-hidden="true"></i>
-							<p>Calle nuermo #3223, Santiago Centro	</p>
-						</div>
-					</div>	
-				</div>
-				<div class="caja-evento">
-					<div class="cuadro-fecha">
-						<span>mayo</span>
-						<p>14</p>
-					</div>
-					<div class="info-evento">
-						<h4>Titulo evento</h4>
-						<hr>
-						<div class="lugar">
-							<i class="fa fa-map-marker" aria-hidden="true"></i>
-							<p>Calle nuermo #3223, Santiago Centro	</p>
-						</div>
-					</div>	
-				</div>
-				<div class="caja-evento">
-					<div class="cuadro-fecha">
-						<span>mayo</span>
-						<p>14</p>
-					</div>
-					<div class="info-evento">
-						<h4>Titulo evento</h4>
-						<hr>
-						<div class="lugar">
-							<i class="fa fa-map-marker" aria-hidden="true"></i>
-							<p>Calle nuermo #3223, Santiago Centro	</p>
-						</div>
-					</div>	
-				</div>
+				<?php endwhile; endif; ?>
 			</div>	
 		</div>
 		<div class="agenda">

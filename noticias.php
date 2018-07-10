@@ -1,4 +1,4 @@
-	<?php 
+<?php 
 /*
 Template Name: Noticias
 */
@@ -26,8 +26,6 @@ Template Name: Noticias
 	
 	<div class="col-md-8 contenido-pagina">
 		<h1 class="wow fadeInUp">Noticias</h1><!-- loop de wordpress este debe ser el título -->
-
-		
 		<div class="row">
 		<?php 
           $currentPage = (get_query_var('paged')) ? get_query_var('paged') : 1 ; //cuenta el numero de post y si no existen vuelve a la primera pagina
@@ -77,15 +75,15 @@ Template Name: Noticias
 		</div>
 
 		<!--fin-->
-		<div class="col-md-8 GG">
+		<div class="col-md-8">
             <?php 
             the_posts_pagination(
-              array(
+              	array(
                   'mid_size' => 2,
                   'screen_reader_text'=> '&nbsp;',//poner texto sobre paginacion
                   'prev_text' => __( '<i class="fa fa-arrow-left"></i>', 'textdomain' ),
                   'next_text' => __( '<i class="fa fa-arrow-right"></i>', 'textdomain' ),
-              )
+              	)
             ); 
             wp_reset_postdata();
             $wp_query = $original_query;
