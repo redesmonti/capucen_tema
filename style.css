@@ -128,12 +128,6 @@ img.logo-central {
 
 
 
-
-
-
-
-
-
 .contadores {
     background: rgba(1,25,132,1);
     background: -moz-linear-gradient(left, rgba(1,25,132,1) 0%, rgba(4,16,71,1) 100%);
@@ -143,13 +137,18 @@ img.logo-central {
     background: -ms-linear-gradient(left, rgba(1,25,132,1) 0%, rgba(4,16,71,1) 100%);
     background: linear-gradient(to right, rgba(1,25,132,1) 0%, rgba(4,16,71,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#011984', endColorstr='#041047', GradientType=1 );
-    height: 135px;
-    padding-top: 3%;
+    height: 155px;
+    padding-top: 1%;
     color: #fff;
 }
-.contador_uno span {
-    font-size: 20px;
+.contador_uno img {
+    width: 72px;
 }
+.contador_uno span {
+    font-size: 30px;
+}
+
+
 .contador_uno p {
     font-size: 12px;
 }
@@ -161,9 +160,15 @@ img.logo-central {
 .titulo-noticias h2 {
     font-size: 20px;
 }
-.titulo-noticias a {
-    padding-top: 22px;
+.titulo-noticias a{
+    padding-top: 22px;    
 }
+.texto h3 a {
+    padding-top: 22px;
+    color: #00105f;
+    text-decoration: none;
+}
+
 .linea-separadora {
     border-top: 1px solid #b7b7b7;
     margin-top: 6px;
@@ -468,7 +473,7 @@ img.comillas {
     height: 220px;
     padding: 90px 25px;
     color: #fff;
-    background-image: url(http://localhost/miguelclaro/wp-content/uploads/2018/06/slider1.png);
+    background-image: url(http://capucen.monticomunicaciones.cl/wp-content/uploads/2018/07/portada-noticias-e1531238842890.jpg);
     overflow: hidden;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -546,7 +551,6 @@ p.bajada-noticia {
     font-style: italic;
 }
 .caja-foto-articulo {
-    height: 450px;
     overflow: hidden;
     margin-bottom: 20px;
 }
@@ -574,4 +578,8 @@ img.noticia-imagen {
     float: right;
     margin-top: 10px;
     margin-bottom: 30px;
+}
+.navegacion-noticias {
+    display: flex;
+    justify-content: space-between;
 }

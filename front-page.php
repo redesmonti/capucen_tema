@@ -8,9 +8,24 @@ echo do_shortcode('[smartslider3 slider=2]');
 <!--     Contadores     -->
 <div class="container-fluid contadores">
 	<div class="contenedor-contadores">
-		<div class="contador_uno wow fadeInUp"><span class="count">324</span><p>Convenio Marco</p></div>
-		<div class="contador_uno wow fadeInUp"><span class="count">423</span><p>Código Sence</p></div>
-		<div class="contador_uno wow fadeInUp"><span class="count">453</span><p>Alumnos</p></div>
+		<div class="contador_uno wow fadeInUp">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/cursos.png" alt="">
+			<div>
+				<span class="count">324</span><p>Convenio Marco</p>
+			</div>
+		</div>
+		<div class="contador_uno wow fadeInUp">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/clases.png" alt="">
+			<div>
+				<span class="count">423</span><p>Código Sence</p>
+			</div>
+		</div>
+		<div class="contador_uno wow fadeInUp">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/alumnos.png" alt="">
+			<div>
+				<span class="count">453</span><p>Alumnos</p>
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -202,8 +217,8 @@ echo do_shortcode('[smartslider3 slider=2]');
 						
 				<div class="caja-evento">
 					<div class="cuadro-fecha">
-						<span>MES</span>
-						<p>Dia</p>
+						<span></span>
+						<p></p>
 					</div>
 					<div class="info-evento">
 						<h4>

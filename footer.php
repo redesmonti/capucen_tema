@@ -2,15 +2,18 @@
 	        <div class="container">
 	            <div class="row">
 	                <div class="col-sm-3">
-	                    <img class="img-footer" src="<?php echo get_template_directory_uri(); ?>/assets/logo-blanco.png" alt="">
+	                    <img class="img-footer" src="<?php echo get_template_directory_uri(); ?>/images/capucen-logo-blanco.png" alt="">
 	                </div>
 	                <div class="col-sm-6">
-	                    <h5>Sedadent</h5>
+	                    <h5>Santiago</h5>
+	                    <hr>
 	                    <ul>
-	                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Hernando de Aguirre 194, of 52 Providencia, Región Metropolitana</li>
-	                        <li><i class="fa fa-phone" aria-hidden="true"></i> +56 2 2604 7459</li>
-                            <li><i class="fa fa-envelope" aria-hidden="true"></i>  contacto@sedadent.cl</li>
-                            <li><i class="fa fa-whatsapp"></i>  +56 9 4407 2907</li>
+	                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Lord Chrocane 417</li>
+	                        <li>Ventas: Massiel Castillo</li>
+	                        <li><i class="fa fa-phone" aria-hidden="true"></i> +56 2 25826254</li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i>  +56 2 25826242</li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i>  mcastilloa@Ucentral.cl</li>
+                            
 	                    </ul>
 	                </div>
 	            </div>
