@@ -32,9 +32,9 @@
 	          <div class="smooth-scroll collapse navbar-collapse navbar-right navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
 			        <li><a href="<?php bloginfo('url'); ?>">Inicio</a></li>
-			        <li><a href="<?php bloginfo('url'); ?>/capucen" class="borde-negro">Capucen</a></li>
+			        <li><a href="<?php bloginfo('url'); ?>/quienes-somos" class="borde-negro">Capucen</a></li>
 			        <li><a href="<?php bloginfo('url'); ?>/noticias">Noticias</a></li>
-			        <li><a href="<?php bloginfo('url'); ?>/capacitaciones" class="borde-negro">Capacitaciones</a></li>
+			        <li><a href="<?php bloginfo('url'); ?>/sense" class="borde-negro">Capacitaciones</a></li>
 			        <li><a href="<?php bloginfo('url'); ?>/contacto">Contacto</a></li>
 			    </ul>
 			    <img src="<?php echo get_template_directory_uri(); ?>/images/logo-central.png" alt="logo central" class="logo-central">

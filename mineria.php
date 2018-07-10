@@ -53,71 +53,7 @@ Nuestros antecedentes están el registro de proveedores REGIC, el que nos avala 
 		</div>
 	</div>
 	<div class="col-md-4">
-		<div class="agenda ">
-			<div class="titulo-noticias">
-				<h2>Agenda</h2>
-				<a href="">Ver más</a>
-			</div>
-			<hr class="linea-separadora">
-			<div class="caja-agenda">
-				<div class="caja-evento">
-					<div class="cuadro-fecha">
-						<span>mayo</span>
-						<p>14</p>
-					</div>
-					<div class="info-evento">
-						<h4>Titulo evento</h4>
-						<hr>
-						<div class="lugar">
-							<i class="fa fa-map-marker" aria-hidden="true"></i>
-							<p>Calle nuermo #3223, Santiago Centro	</p>
-						</div>
-					</div>	
-				</div>
-				<div class="caja-evento">
-					<div class="cuadro-fecha">
-						<span>mayo</span>
-						<p>14</p>
-					</div>
-					<div class="info-evento">
-						<h4>Titulo evento</h4>
-						<hr>
-						<div class="lugar">
-							<i class="fa fa-map-marker" aria-hidden="true"></i>
-							<p>Calle nuermo #3223, Santiago Centro	</p>
-						</div>
-					</div>	
-				</div>
-				<div class="caja-evento">
-					<div class="cuadro-fecha">
-						<span>mayo</span>
-						<p>14</p>
-					</div>
-					<div class="info-evento">
-						<h4>Titulo evento</h4>
-						<hr>
-						<div class="lugar">
-							<i class="fa fa-map-marker" aria-hidden="true"></i>
-							<p>Calle nuermo #3223, Santiago Centro	</p>
-						</div>
-					</div>	
-				</div>
-				<div class="caja-evento">
-					<div class="cuadro-fecha">
-						<span>mayo</span>
-						<p>14</p>
-					</div>
-					<div class="info-evento">
-						<h4>Titulo evento</h4>
-						<hr>
-						<div class="lugar">
-							<i class="fa fa-map-marker" aria-hidden="true"></i>
-							<p>Calle nuermo #3223, Santiago Centro	</p>
-						</div>
-					</div>	
-				</div>
-			</div>	
-		</div>
+		<?php include_once( 'sidebar.php' ); ?>
 		<div class="redes-sociales-capucen">
 			<div class="titulo-noticias">
 				<h2>Síguenos en redes</h2>
