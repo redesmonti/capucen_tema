@@ -50,69 +50,69 @@ Invitamos a su empresa a desarrollar sus propias capacitaciones (cursos cerrados
 				<td>53</td>
 			</tr>
 			<tr>
-				<td><a href="http://otec.sence.cl/detalle_cursos.html?id_area=02&rut=99538950-9&nom_area=Agricultura">Agricultura</a></td>
+				<td><a href="<?php bloginfo('url'); ?>/agricultura/">Agricultura</a></td>
 				<td>2</td>
 			</tr>
 			<tr>
-				<td><a href="http://otec.sence.cl/detalle_cursos.html?id_area=06&rut=99538950-9&nom_area=Ciencias%20Y%20T%E9cnicas%20Aplicadas">Ciencias Y Técnicas Aplicadas</a></td>
+				<td><a href="<?php bloginfo('url'); ?>/ciencias-y-tecnicas-aplicadas">Ciencias Y Técnicas Aplicadas</a></td>
 				<td>44</td>
 			</tr>
 			<tr>
-				<td><a href="http://otec.sence.cl/detalle_cursos.html?id_area=07&rut=99538950-9&nom_area=Comercio%20Y%20Servicios%20Financieros">Comercio Y Servicios Financieros</a></td>
+				<td><a href="<?php bloginfo('url'); ?>/comercio-y-servicios-financieros/">Comercio Y Servicios Financieros</a></td>
 				<td>3</td>
 			</tr>
 			<tr>
-				<td><a href="http://otec.sence.cl/detalle_cursos.html?id_area=08&rut=99538950-9&nom_area=Computaci%F3n%20E%20Inform%E1tica">Computación E Informática</a></td>
+				<td><a href="<?php bloginfo('url'); ?>/computacion-e-informatica|'¿|/">Computación E Informática</a></td>
 				<td>26</td>
 			</tr>
 			<tr>
-				<td><a href="http://otec.sence.cl/detalle_cursos.html?id_area=09&rut=99538950-9&nom_area=Construcci%F3n">Construcción</a></td>
+				<td><a href="<?php bloginfo('url'); ?>/construccion/">Construcción</a></td>
 				<td>10</td>
 			</tr>
 			<tr>
-				<td><a href="http://otec.sence.cl/detalle_cursos.html?id_area=11&rut=99538950-9&nom_area=Educaci%F3n%20Y%20Capacitaci%F3n">Educación Y Capacitación</a></td>
+				<td><a href="<?php bloginfo('url'); ?>/educacion-y-capacitacion/">Educación Y Capacitación</a></td>
 				<td>20</td>
 			</tr>
 			<tr>
 				<td>
-					<a href="http://otec.sence.cl/detalle_cursos.html?id_area=12&rut=99538950-9&nom_area=Electricidad%20Y%20Electr%F3nica">Electricidad Y Electrónica</a>
+					<a href="<?php bloginfo('url'); ?>/electricidad-y-electronica/">Electricidad Y Electrónica</a>
 				</td>
 				<td>7</td>
 			</tr>
 			<tr>
-				<td><a href="http://otec.sence.cl/detalle_cursos.html?id_area=13&rut=99538950-9&nom_area=Energ%EDa%20Nuclear">Energía Nuclear</a></td>
+				<td><a href="<?php bloginfo('url'); ?>/energia-nuclear/">Energía Nuclear</a></td>
 				<td>1</td>
 			</tr>
 			<tr>
-				<td><a href="http://otec.sence.cl/detalle_cursos.html?id_area=16&rut=99538950-9&nom_area=Idiomas%20Y%20Comunicaci%F3n">Idiomas Y Comunicación</a></td>
+				<td><a href="<?php bloginfo('url'); ?>/idiomas-y-comunicacion/">Idiomas Y Comunicación</a></td>
 				<td>6</td>
 			</tr>
 			<tr>
-				<td><a href="http://otec.sence.cl/detalle_cursos.html?id_area=17&rut=99538950-9&nom_area=Mec%E1nica%20Automotriz">Mecánica Automotriz	</a></td>
+				<td><a href="<?php bloginfo('url'); ?>/mecanica-automotriz/">Mecánica Automotriz	</a></td>
 				<td>3</td>
 			</tr>
 			<tr>
-				<td><a href="http://otec.sence.cl/detalle_cursos.html?id_area=18&rut=99538950-9&nom_area=Mec%E1nica%20Industrial">Mecánica Industrial</a></td>
+				<td><a href="<?php bloginfo('url'); ?>/mecanica-industrial/">Mecánica Industrial</a></td>
 				<td>22</td>
 			</tr>
 			<tr>
-				<td><a href="http://otec.sence.cl/detalle_cursos.html?id_area=19&rut=99538950-9&nom_area=Miner%EDa">Minería</a></td>
+				<td><a href="<?php bloginfo('url'); ?>/mineria/">Minería</a></td>
 				<td>22</td>
 			</tr>
 			<tr>
-				<td><a href="http://otec.sence.cl/detalle_cursos.html?id_area=20&rut=99538950-9&nom_area=Procesos%20Industriales">Procesos Industriales</a></td>
+				<td><a href="<?php bloginfo('url'); ?>/procesos-industriales/">Procesos Industriales</a></td>
 				<td>6</td>
 			</tr>
 			<tr>
-				<td><a href="http://otec.sence.cl/detalle_cursos.html?id_area=21&rut=99538950-9&nom_area=Salud,%20Nutrici%F3n%20Y%20Diet%E9tica">Salud, Nutrición Y Dietética</a></td>
+				<td><a href="<?php bloginfo('url'); ?>/salud-nutricion-y-dietetica/">Salud, Nutrición Y Dietética</a></td>
 				<td>15</td>
 			</tr>
 			<tr>
-				<td><a href="http://otec.sence.cl/detalle_cursos.html?id_area=22&rut=99538950-9&nom_area=Servicio%20A%20Las%20Personas">Servicio A Las Personas</a></td>
+				<td><a href="<?php bloginfo('url'); ?>/servicio-a-las-personas/">Servicio A Las Personas</a></td>
 				<td>5</td>
 			</tr>
 			<tr>
-				<td><a href="http://otec.sence.cl/detalle_cursos.html?id_area=23&rut=99538950-9&nom_area=Transporte%20Y%20Telecomunicaciones">Transporte Y Telecomunicaciones</a></td>
+				<td><a href="<?php bloginfo('url'); ?>/transporte-y-telecomunicaciones/">Transporte Y Telecomunicaciones</a></td>
 				<td>40</td>
 			</tr>
 			<tr>

@@ -29,8 +29,8 @@
 			</div>		
 		</div>
 		<hr class="linea-separadora wow fadeInUp">
-		<div class="caja-foto-articulo">
-			<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2012/10/151.jpg" alt="" class="noticia-imagen wow fadeInUp">	
+		<div class="caja-foto-articulo fadeInUp">
+			<?php  if ( has_post_thumbnail() ) { the_post_thumbnail('large', array('class' => '')); }?>
 		</div>
 		<p class="wow fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

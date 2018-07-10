@@ -56,7 +56,7 @@ echo do_shortcode('[smartslider3 slider=2]');
 									</a>
 								</div>
 								<a href="<?php the_permalink(); ?>">
-                                	<?php  if ( has_post_thumbnail() ) { the_post_thumbnail('large', array('class' => 'img-responsive')); }?>
+                                	<?php  if ( has_post_thumbnail() ) { the_post_thumbnail('large', array('class' => '')); }?>
                             	</a>							
 							</div>
 							<div class="texto">
@@ -99,7 +99,7 @@ echo do_shortcode('[smartslider3 slider=2]');
 										</a>
 									</div>
 									<a href="<?php the_permalink(); ?>">
-                                		<?php  if ( has_post_thumbnail() ) { the_post_thumbnail('large', array('class' => 'img-responsive')); }?>
+                                		<?php  if ( has_post_thumbnail() ) { the_post_thumbnail('large', array('class' => '')); }?>
                             		</a>							
 								</div>
 								<div class="texto">

@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: cusros sence
+Template Name: cusros sense
 */
 ?>
 <?php get_header(); ?>
@@ -26,14 +26,16 @@ Template Name: cusros sence
 	</div>
 	
 	<div class="col-md-8 contenido-pagina">
+	<?php if ( have_posts() ) : the_post(); ?>
 		<div class="titulo-noticia-pagina wow fadeInUp">
 			<div class="">
-				<h1>Administración</h1>
+				<h1><?php the_title(); ?></h1>
 			</div>	
 		</div>
 		<hr class="linea-separadora wow fadeIn">
-		<iframe src="http://otec.sence.cl/detalle_cursos.html?id_area=01&rut=99538950-9&nom_area=Administraci%F3n"  height="930px" width="100%" class="iframe-cursos-sense wow fadeIn"></iframe>
+		<p><?php the_content(); ?></p>
 		<a href="" class="atras"><i class="fa fa-chevron-left" aria-hidden="true"></i> Atrás</a>
+		<?php endif; ?>
 	</div>
 	<div class="col-md-4">
 		<div class="agenda ">

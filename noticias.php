@@ -27,6 +27,8 @@ Template Name: Noticias
 	<div class="col-md-8 contenido-pagina">
 		<h1 class="wow fadeInUp">Noticias</h1><!-- loop de wordpress este debe ser el título -->
 
+		
+		<div class="row">
 		<?php 
           $currentPage = (get_query_var('paged')) ? get_query_var('paged') : 1 ; //cuenta el numero de post y si no existen vuelve a la primera pagina
           global $wp_query;
@@ -45,7 +47,6 @@ Template Name: Noticias
                 <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
                 <?php if(!empty($url)){ ?>
 		 <!-- loop de wordpress este debe ser el contenido para editar desde wordpress -->
-		<div class="row">
 			<div class="col-md-4 col-xs-12">
 				<div class="tarjeta-grande tarjeta-grande-noticias wow fadeInUp">
 					<div class="foto-noticia">
@@ -62,18 +63,19 @@ Template Name: Noticias
 							</a>
 						</div>
 						<div class="imagen ">
-	                      <?php  if ( has_post_thumbnail() ) { the_post_thumbnail('medium', array('class' => 'img-responsive')); }?>
+	                      <?php  if ( has_post_thumbnail() ) { the_post_thumbnail('medium', array('class' => '')); }?>
 	                    </div>							
 					</div>
 					<div class="texto">
-						<h3 <?php the_permalink(); ?>><?php the_title(); ?></h3>
-						<p <?php the_permalink(); ?>><?php the_content(); ?></p>		
+						<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+						<p><?php the_content(); ?></p>		
 					</div>
 				</div>	
 			</div>
-		</div>
-		<?php } ?>
+					<?php } ?>
         <?php $i++;endwhile; endif; ?>
+		</div>
+
 		<!--fin-->
 		<div class="col-md-8 GG">
             <?php 
