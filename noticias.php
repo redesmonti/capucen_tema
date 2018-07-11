@@ -70,7 +70,7 @@ Template Name: Noticias
 					</div>
 				</div>	
 			</div>
-					<?php } ?>
+			<?php } ?>
         <?php $i++;endwhile; endif; ?>
 		</div>
 
