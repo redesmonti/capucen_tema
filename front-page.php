@@ -133,7 +133,7 @@ echo do_shortcode('[smartslider3 slider=2]');
 		<div class="noticias row">
 			<div class="titulo-noticias wow fadeInUp">
 				<h2>Temas de Interés</h2>
-				<a href="">Ver más</a>
+				<a href="<?php bloginfo('url'); ?>/temas-de-interes/">Ver más</a>
 			</div>
 			<hr class="linea-separadora">
 			<div class="caja-noticias col-md-12">
