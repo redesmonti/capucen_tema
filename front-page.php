@@ -257,12 +257,7 @@ echo do_shortcode('[smartslider3 slider=2]');
 			<div class="gradiente-testimonios"></div>
 			<h2 class="titulo_testimonio">Testimonios</h2>
 			<div class="carousel slide" data-ride="carousel" id="myCarousel">
-			    <ul class="carousel-indicators">
-			        <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
-			        <li data-target="#myCarousel" data-slide-to="1"></li>
-			        <li data-target="#myCarousel" data-slide-to="2"></li>
-			        <li data-target="#myCarousel" data-slide-to="3"></li>
-			    </ul>
+			    
 			    <div class="carousel-inner">
 			    	<?php 
 				        $currentPage = (get_query_var('paged')) ? get_query_var('paged') : 1 ; //cuenta el numero de post y si no existen vuelve a la primera pagina
