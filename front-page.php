@@ -264,20 +264,28 @@ echo do_shortcode('[smartslider3 slider=2]');
 			        <li data-target="#myCarousel" data-slide-to="3"></li>
 			    </ul>
 			    <div class="carousel-inner">
-			        <div class="item active contenido-testimonio">
+			    	<?php 
+				        $currentPage = (get_query_var('paged')) ? get_query_var('paged') : 1 ; //cuenta el numero de post y si no existen vuelve a la primera pagina
+				        global $wp_query;
+				        $original_query = $wp_query;
+				        $args = array(
+				            'post_type' => 'Testimonio',
+				            'showposts' => '4', //numero de noticias que treara
+				            'paged' => $currentPage ,
+				            'orderby' => 'date', 
+				            'order' => 'DESC'
+					    ); 
+					    $the_query = new WP_Query( $args );    
+					?>
+			    	<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+			        <div class="item <?php if( $the_query->current_post == 0 ):?>active<?php endif; ?> contenido-testimonio">
 				        <div class="imagen-testigo">
 				        	<img class="foto-testigo" src="<?php echo get_template_directory_uri(); ?>/images/comillas.png" alt="mundo">
 				        </div>
-				        <h3>Nombre Testimonio</h3>
-				        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque architecto atque suscipit necessitatibus fugiat praesentium veniam at eligendi cumque error, iusto ducimus dolore, optio molestias esse sequi quae deleniti.</p>
+				        <h3><?php the_title(); ?></h3>
+				        <p><?php the_content(); ?></p>
 			        </div>
-			        <div class="item contenido-testimonio">
-				        <div class="imagen-testigo">
-				        	<img class="foto-testigo" src="<?php echo get_template_directory_uri(); ?>/images/comillas.png" alt="mundo">
-				        </div>
-				        <h3>Nombre Testimonio</h3>
-				        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque architecto atque suscipit necessitatibus fugiat praesentium veniam at eligendi cumque error, iusto ducimus dolore, optio molestias esse sequi quae deleniti.</p>
-			        </div>
+			        <?php endwhile; endif; ?> 
 			        <img class="comillas" src="<?php echo get_template_directory_uri(); ?>/images/comillas.png" alt="mundo">
 			    </div>
 			    <a href="#myCarousel" class="left carousel-control" data-slide="prev">

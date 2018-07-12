@@ -69,7 +69,9 @@ Template Name: Agenda
 					</div>
 					<div class="texto">
 						<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
-						<p><?php the_excerpt(); ?></p>		
+						<p><?php the_excerpt(); ?></p>	
+						<span><?php echo get_field('mes'); ?></span>
+						<p><?php echo get_field('dia'); ?></p>
 					</div>
 				</div>	
 			</div>
