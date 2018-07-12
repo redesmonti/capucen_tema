@@ -263,4 +263,95 @@ register_taxonomy( 'etiqueta_tdi', 'tema_de_interes', array(
 } // Fin de la función create_tdi_taxonomies().
 
 
+/*Testimonios*/
+
+// La función no será utilizada antes del 'init'.
+add_action( 'init', 'my_testimony_init' );
+/* Here's how to create your customized labels */
+function my_testimony_init() {
+  $labels = array(
+  'name' => _x( 'Testimonios', 'post type general name' ),
+        'singular_name' => _x( 'Testimonio', 'post type singular name' ),
+        'add_new' => _x( 'Añadir nuevo Testimonio', 'testimony' ),
+        'add_new_item' => __( 'Añadir nuevo Testimonio' ),
+        'edit_item' => __( 'Editar Testimonio' ),
+        'new_item' => __( 'Nuevo Testimonio' ),
+        'view_item' => __( 'Ver Testimonio' ),
+        'search_items' => __( 'Buscar Testimonios' ),
+        'not_found' =>  __( 'No se han encontrado Testimonios' ),
+        'not_found_in_trash' => __( 'No se han encontrado Testimonios en la papelera' ),
+        'parent_item_colon' => ''
+    );
+ 
+    // Creamos un array para $args
+    $args = array( 'labels' => $labels,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'query_var' => true,
+        'rewrite' => true,
+        'capability_type' => 'post',
+        'hierarchical' => true,
+        'menu_position' => null,
+        'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields' )
+    );
+ 
+    register_post_type( 'Testimonio', $args ); /* Registramos y a funcionar */
+}
+ 
+// Lo enganchamos en la acción init y llamamos a la función create_event_taxonomies() cuando arranque
+add_action( 'init', 'create_testimony_taxonomies', 0 );
+ 
+// Creamos dos taxonomías, Categoria y autor para el custom post type "libro"
+function create_testimony_taxonomies() {
+
+  // Añadimos nueva taxonomía y la hacemos jerárquica (como las categorías por defecto)
+  $labels = array(
+  'name' => _x( 'Categorias', 'taxonomy general name' ),
+  'singular_name' => _x( 'Categoria', 'taxonomy singular name' ),
+  'search_items' =>  __( 'Buscar por Categoria' ),
+  'all_items' => __( 'Todos los Categorias' ),
+  'parent_item' => __( 'Categoria padre' ),
+  'parent_item_colon' => __( 'Categoria padre:' ),
+  'edit_item' => __( 'Editar Categoria' ),
+  'update_item' => __( 'Actualizar Categoria' ),
+  'add_new_item' => __( 'Añadir nueva Categoria' ),
+  'new_item_name' => __( 'Nombre del nueva Categoria' ),
+);
+register_taxonomy( 'categoria_testimonio', array( 'testimonio' ), array(
+  'hierarchical' => true,
+  'labels' => $labels, /* ADVERTENCIA: Aquí es donde se utiliza la variable $labels */
+  'show_ui' => true,
+  'query_var' => true,
+  'rewrite' => array( 'slug' => 'categoria' ),
+));
+
+// Añado otra taxonomía, esta vez no es jerárquica, como las etiquetas.
+$labels = array(
+  'name' => _x( 'Etiquetas', 'taxonomy general name' ),
+  'singular_name' => _x( 'Etiqueta', 'taxonomy singular name' ),
+  'search_items' =>  __( 'Buscar Etiquetas' ),
+  'popular_items' => __( 'Etiquetas populares' ),
+  'all_items' => __( 'Todos los Etiquetas' ),
+  'parent_item' => null,
+  'parent_item_colon' => null,
+  'edit_item' => __( 'Editar Etiqueta' ),
+  'update_item' => __( 'Actualizar Etiqueta' ),
+  'add_new_item' => __( 'Añadir nuevo Etiqueta' ),
+  'new_item_name' => __( 'Nombre del nuevo Etiqueta' ),
+  'separate_items_with_commas' => __( 'Separar Etiquetas por comas' ),
+  'add_or_remove_items' => __( 'Añadir o eliminar Etiquetas' ),
+  'choose_from_most_used' => __( 'Escoger entre los Etiquetas más utilizadas' )
+);
+ 
+register_taxonomy( 'etiqueta_testimonio', 'testimonio', array(
+  'hierarchical' => false,
+  'labels' => $labels, /* ADVERTENCIA: Aquí es donde se utiliza la variable $labels */
+  'show_ui' => true,
+  'query_var' => true,
+  'rewrite' => array( 'slug' => 'etiqueta' ),
+));
+} // Fin de la función create_event_taxonomies().
+
+
 ?>

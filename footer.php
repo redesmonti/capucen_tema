@@ -8,7 +8,7 @@
 	                    <h5>Santiago</h5>
 	                    <hr>
 	                    <ul>
-	                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Lord Chrocane 417</li>
+	                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>Lord Chrocane 417</li>
 	                        <li>Ventas: Massiel Castillo</li>
 	                        <li><i class="fa fa-phone" aria-hidden="true"></i> +56 2 25826254</li>
                             <li><i class="fa fa-phone" aria-hidden="true"></i>  +56 2 25826242</li>

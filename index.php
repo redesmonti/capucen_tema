@@ -49,6 +49,20 @@
 	</div>
 	<div class="col-md-4">
 		<?php include_once( 'sidebar.php' ); ?>
+		<div class="agenda">
+			<div class="titulo-noticias wow fadeInUp">
+				<h2>Indicadores Económicos</h2>
+			</div>
+			<hr class="linea-separadora">
+			<div class="caja-indicadores wow fadeInUp">
+				<ul>
+					<li><p>Dolar</p> <p>650</p></li>
+					<li><p>Euro</p> <p>650</p></li>
+					<li><p>UFr</p> <p>650</p></li>
+					<li><p>UTM</p> <p>650</p></li>
+				</ul>
+			</div>
+		</div>
 		<div class="redes-sociales-capucen">
 			<div class="titulo-noticias">
 				<h2>Síguenos en redes</h2>
