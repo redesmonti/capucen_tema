@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: cusros sense
+Template Name: cusros sence
 */
 ?>
 <?php get_header(); ?>
@@ -9,16 +9,15 @@ Template Name: cusros sense
 		<div class="col-md-12">
 			<div class="row">
 				<div class="caja-titulo">
-					<h1 class="wow fadeIn">Sense</h1>
+					<h1 class="wow fadeIn">Sence</h1>
 					<p class="wow fadeIn">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
 					<div class="gradiente-azul-titulo-index"></div>
 				</div>
 				<div class="sub-menu">
 					<ul>
-						<a href="<?php bloginfo('url'); ?>/sense/"><li>Sense</li></a>
+						<a href="<?php bloginfo('url'); ?>/sense/"><li>Sence</li></a>
 						<a href="<?php bloginfo('url'); ?>/convenio-marco/"><li>Convenio Marco</li></a>
 						<a href="<?php bloginfo('url'); ?>/mineria/"><li>Cursos Abiertos</li></a>
-						<a href="<?php bloginfo('url'); ?>/agenda/"><li>Diplomados en Conjunto U Central</li></a>
 					</ul>
 				</div>
 			</div>

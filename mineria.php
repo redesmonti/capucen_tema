@@ -15,10 +15,9 @@ Template Name: Mineria
 				</div>
 				<div class="sub-menu">
 					<ul>
-						<a href="<?php bloginfo('url'); ?>/sense/"><li>Sense</li></a>
+						<a href="<?php bloginfo('url'); ?>/sense/"><li>Sence</li></a>
 						<a href="<?php bloginfo('url'); ?>/convenio-marco/"><li>Convenio Marco</li></a>
 						<a href="<?php bloginfo('url'); ?>/mineria/"><li>Cursos Abiertos</li></a>
-						<a href="<?php bloginfo('url'); ?>/agenda/"><li>Diplomados en Conjunto U Central</li></a>
 					</ul>
 				</div>
 			</div>

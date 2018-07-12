@@ -1,6 +1,6 @@
 	<?php 
 /*
-Template Name: Sense
+Template Name: Sence
 */
 ?>
 <?php get_header(); ?>
@@ -15,10 +15,9 @@ Template Name: Sense
 				</div>
 				<div class="sub-menu">
 					<ul>
-						<a href="<?php bloginfo('url'); ?>/sense/"><li>Sense</li></a>
+						<a href="<?php bloginfo('url'); ?>/sense/"><li>Sence</li></a>
 						<a href="<?php bloginfo('url'); ?>/convenio-marco/"><li>Convenio Marco</li></a>
 						<a href="<?php bloginfo('url'); ?>/mineria/"><li>Cursos Abiertos</li></a>
-						<a href="<?php bloginfo('url'); ?>/agenda/"><li>Diplomados en Conjunto U Central</li></a>
 					</ul>
 				</div>
 			</div>
@@ -28,11 +27,11 @@ Template Name: Sense
 	<div class="col-md-8 contenido-pagina">
 		<div class="titulo-noticia-pagina wow fadeInUp">
 			<div class="">
-				<h1>Sense</h1>
+				<h1>Sence</h1>
 			</div>	
 		</div>
 		<hr class="linea-separadora wow fadeInUp">
-		<p class="wow fadeInUp">Estás en: Portada   Central Servicios
+		<p class="wow fadeInUp">
 Invitamos a su empresa a desarrollar sus propias capacitaciones (cursos cerrados) en los temas, lugares, fechas y horarios a convenir, optimizando la productividad y el bienestar de sus trabajadores.
 		<br>
 		<br>
@@ -50,17 +49,13 @@ Invitamos a su empresa a desarrollar sus propias capacitaciones (cursos cerrados
 				<td>53</td>
 			</tr>
 			<tr>
-				<td><a href="<?php bloginfo('url'); ?>/agricultura/">Agricultura</a></td>
-				<td>2</td>
-			</tr>
-			<tr>
 				<td><a href="<?php bloginfo('url'); ?>/ciencias-y-tecnicas-aplicadas">Ciencias Y Técnicas Aplicadas</a></td>
 				<td>44</td>
 			</tr>
-			<tr>
+<!-- 			<tr>
 				<td><a href="<?php bloginfo('url'); ?>/comercio-y-servicios-financieros/">Comercio Y Servicios Financieros</a></td>
 				<td>3</td>
-			</tr>
+			</tr> -->
 			<tr>
 				<td><a href="<?php bloginfo('url'); ?>/computacion-e-informatica|'¿|/">Computación E Informática</a></td>
 				<td>26</td>
@@ -78,10 +73,6 @@ Invitamos a su empresa a desarrollar sus propias capacitaciones (cursos cerrados
 					<a href="<?php bloginfo('url'); ?>/electricidad-y-electronica/">Electricidad Y Electrónica</a>
 				</td>
 				<td>7</td>
-			</tr>
-			<tr>
-				<td><a href="<?php bloginfo('url'); ?>/energia-nuclear/">Energía Nuclear</a></td>
-				<td>1</td>
 			</tr>
 			<tr>
 				<td><a href="<?php bloginfo('url'); ?>/idiomas-y-comunicacion/">Idiomas Y Comunicación</a></td>
