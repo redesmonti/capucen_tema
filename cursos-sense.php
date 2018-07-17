@@ -8,7 +8,7 @@ Template Name: cusros sence
 	<div class="row">
 		<div class="col-md-12">
 			<div class="row">
-				<div class="caja-titulo">
+				<div class="caja-titulo cursos">
 					<h1 class="wow fadeIn">Sence</h1>
 					<p class="wow fadeIn">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
 					<div class="gradiente-azul-titulo-index"></div>
@@ -33,7 +33,7 @@ Template Name: cusros sence
 		</div>
 		<hr class="linea-separadora wow fadeIn">
 		<p><?php the_content(); ?></p>
-		<a href="" class="atras"><i class="fa fa-chevron-left" aria-hidden="true"></i> Atrás</a>
+		<a href="javascript:history.back(1)" class="atras"><i class="fa fa-chevron-left" aria-hidden="true"></i> Atrás</a>
 		<?php endif; ?>
 	</div>
 	<div class="col-md-4">

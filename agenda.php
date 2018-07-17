@@ -70,8 +70,12 @@ Template Name: Agenda
 					<div class="texto">
 						<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
 						<p><?php the_excerpt(); ?></p>	
-						<span><?php echo get_field('mes'); ?></span>
-						<p><?php echo get_field('dia'); ?></p>
+						
+						<div class="fechas-evento-tarjeta">
+							<p>Fecha: <?php echo get_field('dia'); ?>  <?php echo get_field('mes'); ?></p>
+							<p>Lugar: <?php echo get_field('lugar'); ?></p>
+						</div>
+						
 					</div>
 				</div>	
 			</div>

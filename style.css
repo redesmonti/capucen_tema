@@ -481,6 +481,12 @@ img.comillas {
     background-attachment: fixed;
     text-align: center;
 }
+.contacto{
+    background-image: url(http://capucen.monticomunicaciones.cl/wp-content/uploads/2018/07/central.jpg)    
+}
+.cursos{
+    background-image: url(http://capucen.monticomunicaciones.cl/wp-content/uploads/2018/07/clases-e1531848054244.jpg);
+}
 .caja-titulo h1 {
     color: #fff;
     text-shadow: 1px 3px 4px black;
@@ -582,4 +588,15 @@ img.noticia-imagen {
 .navegacion-noticias {
     display: flex;
     justify-content: space-between;
+}
+
+
+.fechas-evento-tarjeta p {
+    color: #4a4a4a;
+    text-align: left;
+}
+
+
+.datos-oficinas {
+    margin-bottom: 35px;
 }

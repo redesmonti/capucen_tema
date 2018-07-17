@@ -22,15 +22,15 @@
 		<?php if ( have_posts() ) : the_post(); ?>
 		<div class="titulo-noticia-pagina wow fadeInUp">
 			<div class="">
-				<h1><?php the_title(); ?></h1>
-				<p class="bajada-noticia">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis culpa</p>	
+				<h1 class="wow fadeInUp"><?php the_title(); ?></h1>
+				<p class="bajada-noticia wow fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis culpa</p>	
 			</div>
 			<div>
 				<i class="fa fa-calendar" aria-hidden="true"></i> <span><?php the_date(); ?></span><!-- esta fecha que debe ser?, la fecha actual o la fecha de creacion del post??-->
 			</div>		
 		</div>
 		<hr class="linea-separadora wow fadeInUp">
-		<div class="caja-foto-articulo fadeInUp">
+		<div class="caja-foto-articulo wow fadeInUp">
 			<?php  if ( has_post_thumbnail() ) { the_post_thumbnail('medium', array('class' => '')); }?>
 		</div>
 		<p class="wow fadeInUp"><?php the_content(); ?></p>

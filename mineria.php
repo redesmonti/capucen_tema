@@ -8,7 +8,7 @@ Template Name: Mineria
 	<div class="row">
 		<div class="col-md-12">
 			<div class="row">
-				<div class="caja-titulo">
+				<div class="caja-titulo cursos">
 					<h1 class="wow fadeIn">Capacitaciones</h1>
 					<p class="wow fadeIn">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
 					<div class="gradiente-azul-titulo-index"></div>
