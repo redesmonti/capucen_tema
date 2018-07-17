@@ -56,26 +56,14 @@ function mis_widgets(){
  register_sidebar(
    array(
        'name'          => __( 'Sidebar' ),
-       'id'            => 'sidebar',
-       'description'   => 'Widget para las paginas interiores',
+       'id'            => 'sidebar_economico',
+       'description'   => 'Widget para los indicadores economicos',
        'before_widget' => '<div id="%1$s" class="widget">',
        'after_widget'  => '</div>',
        'before_title'  => '<h3 class="widget-tittle">',
        'after_title'   => '</h3>',
    )
  );
-
- register_sidebar( 
-  array(
-       'name'          => __( 'Sidebar2' ),
-       'id'            => 'sidebar2',
-       'description'   => 'Widget para filtrar Eventos (Agenda)',
-       'before_widget' => '<div id="%1$s" class="widget">',
-       'after_widget'  => '</div>',
-       'before_title'  => '<h3 class="widget-tittle">',
-       'after_title'   => '</h3>',
-  ) 
-  );
 
 }
 add_action('init','mis_widgets');

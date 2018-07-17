@@ -35,18 +35,19 @@
 		</div>
 		<p class="wow fadeInUp"><?php the_content(); ?></p>
 		<br>
+		<?php endif; ?>
 		<hr class="linea-separadora wow fadeInUp"> 
 		<div class="iconos-imprimir-compartir wow fadeInUp">
 			<a href=""><i class="fa fa-print" aria-hidden="true"></i></a>
 			<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
 			<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
 		</div>
-		<?php endif; ?>
-			<div class="col-md-12 navegacion-noticias">
+		<div class="col-md-12 navegacion-noticias">
         <?php previous_post_link('%link', '<i class="fa fa-arrow-left"></i> Atras '); ?><!--hacia atras-->
         <?php next_post_link('%link', ' Siguiente <i class="fa fa-arrow-right"></i>'); ?><!--hacia adelante-->
     </div>
 	</div>
+	<?php rewind_posts(); ?>
 	<div class="col-md-4">
 		<?php include_once( 'sidebar.php' ); ?>
 		<div class="agenda">
@@ -55,12 +56,7 @@
 			</div>
 			<hr class="linea-separadora">
 			<div class="caja-indicadores wow fadeInUp">
-				<ul>
-					<li><p>Dolar</p> <p>650</p></li>
-					<li><p>Euro</p> <p>650</p></li>
-					<li><p>UFr</p> <p>650</p></li>
-					<li><p>UTM</p> <p>650</p></li>
-				</ul>
+				<?php dynamic_sidebar( 'sidebar_economico' ); ?>
 			</div>
 		</div>
 		<div class="redes-sociales-capucen">

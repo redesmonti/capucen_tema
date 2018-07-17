@@ -47,7 +47,8 @@ Template Name: Single Tema de Interes
 	        <?php previous_post_link('%link', '<i class="fa fa-arrow-left"></i> Atras '); ?><!--hacia atras-->
 	        <?php next_post_link('%link', ' Siguiente <i class="fa fa-arrow-right"></i>'); ?><!--hacia adelante-->
 	    </div>
-	    <?php endif; ?>	
+	    <?php endif; ?>
+	    <?php rewind_posts(); ?>	
 	</div>
 	<div class="col-md-4">
 		<?php include_once( 'sidebar.php' ); ?>
@@ -57,12 +58,7 @@ Template Name: Single Tema de Interes
 			</div>
 			<hr class="linea-separadora">
 			<div class="caja-indicadores wow fadeInUp">
-				<ul>
-					<li><p>Dolar</p> <p>650</p></li>
-					<li><p>Euro</p> <p>650</p></li>
-					<li><p>UFr</p> <p>650</p></li>
-					<li><p>UTM</p> <p>650</p></li>
-				</ul>
+				<?php dynamic_sidebar( 'sidebar_economico' ); ?>
 			</div>
 		</div>
 	</div>
