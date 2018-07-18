@@ -53,13 +53,13 @@ Template Name: Agenda
 					<div class="foto-noticia">
 					<div class="gradiente-foto"></div>
 						<div class="redes-sociales">
-							<a href="" class="">
+							<a target="_blank" href="https://www.facebook.com/sharer?u=<?php the_permalink();?>&t=<?php the_title(); ?>">
 								<div class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></div>
 							</a>
-							<a href="">
+							<a target="_blank" href="https://twitter.com/intent/tweet?text=Estoy leyendo <?php the_title(); ?>&amp;url=<?php the_permalink(); ?>">
 								<div class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></div>
 							</a>	
-							<a href="">
+							<a target="_blank" href="https://wa.me/whatsappphonenumber/?text=Estoy leyendo <?php the_permalink();?>&t=<?php the_title(); ?>">
 								<div class="wsp"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
 							</a>
 						</div>
