@@ -56,7 +56,7 @@ Template Name: Noticias
 							<a target="_blank" href="https://twitter.com/intent/tweet?text=Estoy leyendo <?php the_title(); ?>&amp;url=<?php the_permalink(); ?>">
 								<div class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></div>
 							</a>	
-							<a target="_blank" href="https://wa.me/whatsappphonenumber/?text=Estoy leyendo <?php the_permalink();?>&t=<?php the_title(); ?>">
+							<a target="_blank" href="https://web.whatsapp.com/send?text=Estoy leyendo <?php the_permalink();?>&t=<?php the_title(); ?>">
 								<div class="wsp"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
 							</a>
 						</div>
@@ -65,7 +65,6 @@ Template Name: Noticias
 	                    </div>							
 					</div>
 					<div class="texto">
-						<a target="_blank" href="https://www.facebook.com/sharer?u=<?php the_permalink();?>&t=<?php the_title(); ?>">Share this on Facebook</a>
 						<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
 						<p><?php the_excerpt(); ?></p>		
 					</div>

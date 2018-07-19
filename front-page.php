@@ -66,7 +66,7 @@ echo do_shortcode('[smartslider3 slider=2]');
 									<a target="_blank" href="https://twitter.com/intent/tweet?text=Estoy leyendo <?php the_title(); ?>&amp;url=<?php the_permalink(); ?>">
 										<div class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></div>
 									</a>	
-									<a target="_blank" href="https://wa.me/whatsappphonenumber/?text=Estoy leyendo <?php the_permalink();?>&t=<?php the_title(); ?>">
+									<a target="_blank" href="https://web.whatsapp.com/send?text=Estoy leyendo <?php the_permalink();?>&t=<?php the_title(); ?>">
 										<div class="wsp"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
 									</a>
 								</div>
@@ -109,7 +109,7 @@ echo do_shortcode('[smartslider3 slider=2]');
 										<a target="_blank" href="https://twitter.com/intent/tweet?text=Estoy leyendo <?php the_title(); ?>&amp;url=<?php the_permalink(); ?>">
 											<div class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></div>
 										</a>	
-										<a target="_blank" href="https://wa.me/whatsappphonenumber/?text=Estoy leyendo <?php the_permalink();?>&t=<?php the_title(); ?>">
+										<a target="_blank" href="https://web.whatsapp.com/send?text=Estoy leyendo <?php the_permalink();?>&t=<?php the_title(); ?>">
 											<div class="wsp"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
 										</a>
 									</div>
@@ -167,7 +167,7 @@ echo do_shortcode('[smartslider3 slider=2]');
 										<a target="_blank" href="https://twitter.com/intent/tweet?text=Estoy leyendo <?php the_title(); ?>&amp;url=<?php the_permalink(); ?>">
 											<div class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></div>
 										</a>	
-										<a target="_blank" href="https://wa.me/whatsappphonenumber/?text=Estoy leyendo <?php the_permalink();?>&t=<?php the_title(); ?>">
+										<a target="_blank" href="https://web.whatsapp.com/send?text=Estoy leyendo <?php the_permalink();?>&t=<?php the_title(); ?>">
 											<div class="wsp"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
 										</a>
 									</div>

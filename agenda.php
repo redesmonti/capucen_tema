@@ -59,7 +59,7 @@ Template Name: Agenda
 							<a target="_blank" href="https://twitter.com/intent/tweet?text=Estoy leyendo <?php the_title(); ?>&amp;url=<?php the_permalink(); ?>">
 								<div class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></div>
 							</a>	
-							<a target="_blank" href="https://wa.me/whatsappphonenumber/?text=Estoy leyendo <?php the_permalink();?>&t=<?php the_title(); ?>">
+							<a target="_blank" href="https://web.whatsapp.com/send?text=Estoy leyendo <?php the_permalink();?>&t=<?php the_title(); ?>">
 								<div class="wsp"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
 							</a>
 						</div>
@@ -85,71 +85,7 @@ Template Name: Agenda
 		</div>
 	</div>
 	<div class="col-md-4">
-		<div class="agenda ">
-			<div class="titulo-noticias">
-				<h2>Agenda</h2>
-				<a href="">Ver más</a>
-			</div>
-			<hr class="linea-separadora">
-			<div class="caja-agenda">
-				<div class="caja-evento">
-					<div class="cuadro-fecha">
-						<span>mayo</span>
-						<p>14</p>
-					</div>
-					<div class="info-evento">
-						<h4>Titulo evento</h4>
-						<hr>
-						<div class="lugar">
-							<i class="fa fa-map-marker" aria-hidden="true"></i>
-							<p>Calle nuermo #3223, Santiago Centro	</p>
-						</div>
-					</div>	
-				</div>
-				<div class="caja-evento">
-					<div class="cuadro-fecha">
-						<span>mayo</span>
-						<p>14</p>
-					</div>
-					<div class="info-evento">
-						<h4>Titulo evento</h4>
-						<hr>
-						<div class="lugar">
-							<i class="fa fa-map-marker" aria-hidden="true"></i>
-							<p>Calle nuermo #3223, Santiago Centro	</p>
-						</div>
-					</div>	
-				</div>
-				<div class="caja-evento">
-					<div class="cuadro-fecha">
-						<span>mayo</span>
-						<p>14</p>
-					</div>
-					<div class="info-evento">
-						<h4>Titulo evento</h4>
-						<hr>
-						<div class="lugar">
-							<i class="fa fa-map-marker" aria-hidden="true"></i>
-							<p>Calle nuermo #3223, Santiago Centro	</p>
-						</div>
-					</div>	
-				</div>
-				<div class="caja-evento">
-					<div class="cuadro-fecha">
-						<span>mayo</span>
-						<p>14</p>
-					</div>
-					<div class="info-evento">
-						<h4>Titulo evento</h4>
-						<hr>
-						<div class="lugar">
-							<i class="fa fa-map-marker" aria-hidden="true"></i>
-							<p>Calle nuermo #3223, Santiago Centro	</p>
-						</div>
-					</div>	
-				</div>
-			</div>	
-		</div>
+		<?php include_once( 'sidebar.php' ); ?>
 		<div class="redes-sociales-capucen">
 			<div class="titulo-noticias">
 				<h2>Síguenos en redes</h2>
