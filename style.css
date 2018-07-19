@@ -81,11 +81,11 @@ img.logo-central {
 }
 
 .navbar-toggle .icon-bar {
-  display: block;
-  width: 26px;
-  height: 4px;
-  background-color: #5ab6a4;
-  border-radius: 1px;
+    display: block;
+    width: 26px;
+    height: 4px;
+    background-color: #002081;
+    border-radius: 1px;
 }
 
 /*codigo para ajustar logo en navbar*/
@@ -599,4 +599,55 @@ img.noticia-imagen {
 
 .datos-oficinas {
     margin-bottom: 35px;
+}
+
+
+
+
+
+
+
+@media (min-width: 667px){
+.pilares {
+    height: 445px;
+}
+.caja-titulo, .cursos, .contacto {
+    background-size: 147% !important;
+}
+}
+
+
+
+@media (max-width: 375px){
+    img.logo-central {
+    width: 143px;
+    margin-top: 11px;
+    margin-left: 30%;
+    margin-bottom: 11px;
+    }
+    .carousel-indicators {
+        bottom: -55px;
+    }
+    .testiminios .carousel {
+        height: 405px;
+        width: 95%;
+    }
+    .testiminios .carousel-control.left {
+        margin-left: 20px;
+    }
+    .testiminios .carousel-control.right {
+        margin-right: 20px;
+    }
+    .testiminios {
+    background-size: 194%;
+}
+.caja-titulo{
+    background-size: 147%;
+}
+.cursos{
+    background-size: 240%;
+}
+.contacto {
+    background-size: 195%;
+}
 }
