@@ -19,9 +19,12 @@
 	          <div class="navbar-header"> 
 	            <div class="navbar-brand">
 	              <a href="<?php bloginfo('url'); ?>">
-	              	<h3><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo-capucen.png" alt="..."></h3>
-	              </a>  
-	            </div> 
+	              	<h3><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/capacita-ucen.png" alt="..."></h3>
+	              </a> 
+	            </div>
+	            <div class="logo-calidad">
+	          	<img class="nch" src="<?php echo get_template_directory_uri(); ?>/images/nch.png" alt=""> 
+	          </div> 
 	            <button type="button" class="navbar-toggle smooth-scroll" data-toggle="collapse" data-target=".navbar-ex1-collapse"> 
 	              <span class="sr-only">Toggle navigation</span> 
 	              <span class="icon-bar"></span> 

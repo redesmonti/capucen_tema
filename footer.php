@@ -2,7 +2,7 @@
 	        <div class="container">
 	            <div class="row">
 	                <div class="col-sm-3">
-	                    <img class="img-footer" src="<?php echo get_template_directory_uri(); ?>/images/capucen-logo-blanco.png" alt="">
+	                    <img class="img-footer" src="<?php echo get_template_directory_uri(); ?>/images/capacita-ucen-blanco.png" alt="">
 	                </div>
 	                <div class="col-sm-4">
 	                    <h5>Santiago</h5>

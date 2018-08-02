@@ -16,7 +16,7 @@ Template Name: Contacto
 				</div>
 				<div class="sub-menu">
 				<ul>
-					<a href="<?php bloginfo('url'); ?>/contacto/"><li>Mesa central</li></a>
+					<a href="<?php bloginfo('url'); ?>/contacto/"><li>Ventas</li></a>
 					<a href="<?php bloginfo('url'); ?>/facturacion-y-pagos/"><li>Directorio Telefónico Santiago</li></a>
 				</ul>
 				</div>

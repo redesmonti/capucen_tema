@@ -94,7 +94,13 @@ img.logo-central {
     padding: 0px;
 }
 .navbar-brand> a img {
-    width: 139px;
+    width: 200px;
+}
+img.nch {
+    width: 78px;
+}
+.navbar-header {
+    display: inline-flex;
 }
 /* para dispositivos moviles*/
 @media (min-width: 780px){
